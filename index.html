@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="test/qunit/jquery-1.4.2.min.js"></script>
+    <script type='text/javascript' src='flash.js'></script>
+  </head>
+  <body>
+    <div id='thing' style="height:300px;width:100%" data-src="flashvars.swf"></div>
+    <script type="text/javascript">
+      $(function(){
+        $('#thing').flash().data('flash').load();
+      })
+    </script>
+  </body>
+</html>
